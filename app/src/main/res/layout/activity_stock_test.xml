@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#89cff0"
+    tools:context="com.example.reece.stockmanagementapp.StockActivity">
+
+    <TextView
+        android:id="@+id/stockTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/stockTitle"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textColor="#000"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/optionMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/option_message"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:layout_below="@+id/stockTitle"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true" />
+
+
+    <EditText
+        android:id="@+id/barcodeEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/optionMessage"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:textColor="#222"
+        android:hint="@string/barcode"
+        android:textColorHint="#9d9d9d"
+        android:padding="5dp"
+        android:inputType="number"
+        android:maxLength="25"/>
+
+    <EditText
+        android:id="@+id/productNameEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/barcodeEditText"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:textColor="#222"
+        android:hint="@string/name"
+        android:textColorHint="#9d9d9d"
+        android:padding="5dp"
+        android:inputType="textCapWords"
+        android:maxLength="35"/>
+
+    <EditText
+        android:id="@+id/typeEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/productNameEditText"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:textColor="#222"
+        android:hint="@string/type"
+        android:textColorHint="#9d9d9d"
+        android:padding="5dp"
+        android:inputType="textCapWords"
+        android:maxLength="20"/>
+
+    <EditText
+        android:id="@+id/quantityEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/typeEditText"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:focusableInTouchMode="false"
+        android:textColor="#222"
+        android:hint="@string/quantity"
+        android:textColorHint="#9d9d9d"
+        android:padding="5dp"
+        android:inputType="number"
+        android:maxLength="3"/>
+
+    <EditText
+        android:id="@+id/idStockEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/quantityEditText"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:textColor="#222"
+        android:hint="@string/id"
+        android:textColorHint="#9d9d9d"
+        android:padding="5dp"
+        android:inputType="number"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/viewStockBtn"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:text="@string/viewStock"
+        android:textColor="#fff"
+        android:background="@drawable/rounded_button"
+        android:layout_above="@+id/removeStockBtn"
+        android:layout_toStartOf="@+id/blankSpace"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="5dp"/>
+
+    <Button
+        android:id="@+id/scanStockBtn"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:text="@string/scanStock"
+        android:textColor="#fff"
+        android:background="@drawable/rounded_button"
+        android:layout_above="@+id/removeStockBtn"
+        android:layout_toEndOf="@+id/blankSpace"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="5dp"/>
+
+    <Button
+        android:id="@+id/addStockBtn"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:text="@string/stockAdd"
+        android:textColor="#fff"
+        android:background="@drawable/rounded_button"
+        android:layout_above="@+id/editStockBtn"
+        android:layout_toStartOf="@+id/blankSpace"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="5dp"/>
+
+    <Button
+        android:id="@+id/removeStockBtn"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:text="@string/subStock"
+        android:textColor="#fff"
+        android:background="@drawable/rounded_button"
+        android:layout_above="@+id/searchStockBtn"
+        android:layout_toEndOf="@+id/blankSpace"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="5dp"/>
+
+    <Button
+        android:id="@+id/editStockBtn"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:text="@string/stockEdit"
+        android:textColor="#fff"
+        android:background="@drawable/rounded_button"
+        android:layout_marginEnd="5dp"
+        android:layout_alignTop="@+id/blankSpace"
+        android:layout_toStartOf="@+id/blankSpace"/>
+
+    <Button
+        android:id="@+id/searchStockBtn"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:text="@string/searchStock"
+        android:textColor="#fff"
+        android:background="@drawable/rounded_button"
+        android:layout_marginStart="5dp"
+        android:layout_alignTop="@+id/blankSpace"
+        android:layout_toEndOf="@+id/blankSpace" />
+
+    <Button
+        android:id="@+id/returnHomeBtn"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="@string/home"
+        android:textColor="#fff"
+        android:background="#303030" />
+
+    <Space android:id="@+id/blankSpace"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_above="@id/returnHomeBtn"
+        android:layout_marginBottom="60dp"
+        android:visibility="invisible"/>
+
+    <Space android:id="@+id/blankSpace2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/quantity2"
+        android:layout_centerInParent="true"
+        android:id="@+id/quantityTextView"
+        android:layout_above="@+id/viewStockBtn"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/decreaseQuantity"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="@string/minus"
+        android:textColor="#fff"
+        android:background="@drawable/rounded_button"
+        android:layout_marginStart="5dp"
+        android:layout_above="@id/viewStockBtn"
+        android:layout_toStartOf="@+id/quantityTextView"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="17dp"/>
+    <Button
+        android:id="@+id/increaseQuantity"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="@string/plus"
+        android:textColor="#fff"
+        android:background="@drawable/rounded_button"
+        android:layout_above="@id/scanStockBtn"
+        android:layout_toEndOf="@+id/quantityTextView"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="17dp"/>
+
+</RelativeLayout>

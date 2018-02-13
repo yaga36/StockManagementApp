@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#89cff0"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.reece.stockmanagementapp.AppointmentActivity">
+
+
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:text="@string/appTitle"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/optionMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="@string/option_message"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/nameAppEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/optionMessage"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:textColor="#222"
+        android:textColorHint="#9d9d9d"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/surnameAppEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameAppEditText"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:hint="@string/surname"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:textColor="#222"
+        android:textColorHint="#9d9d9d"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/idAppEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameAppTextView"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="@string/id"
+        android:inputType="number"
+        android:padding="5dp"
+        android:textColor="#222"
+        android:textColorHint="#9d9d9d" />
+
+    <EditText
+        android:id="@+id/emailAppEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idAppEditText"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:padding="5dp"
+        android:textColor="#222"
+        android:textColorHint="#9d9d9d" />
+
+    <EditText
+        android:id="@+id/dateEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailAppEditText"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:focusableInTouchMode="false"
+        android:hint="@string/date"
+        android:inputType="datetime"
+        android:padding="5dp"
+        android:textColor="#222"
+        android:textColorHint="#9d9d9d" />
+
+    <EditText
+        android:id="@+id/timeEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dateEditText"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:focusableInTouchMode="false"
+        android:hint="@string/time"
+        android:inputType="number"
+        android:padding="5dp"
+        android:textColor="#222"
+        android:textColorHint="#9d9d9d" />
+
+    <EditText
+        android:id="@+id/serviceAppEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timeEditText"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="@string/service"
+        android:inputType="textCapSentences"
+        android:padding="5dp"
+        android:textColor="#222"
+        android:textColorHint="#9d9d9d"
+        android:visibility="gone" />
+
+
+    <Button
+        android:id="@+id/viewAppBtn"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_above="@+id/removeAppBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/viewApp"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/addAppBtn"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_above="@+id/editAppBtn"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_toStartOf="@+id/blankSpace"
+        android:background="@drawable/rounded_button"
+        android:text="@string/appAdd"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/removeAppBtn"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_above="@+id/searchAppBtn"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/blankSpace"
+        android:background="@drawable/rounded_button"
+        android:text="@string/subApp"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/editAppBtn"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/blankSpace"
+        android:layout_marginEnd="5dp"
+        android:layout_toStartOf="@+id/blankSpace"
+        android:background="@drawable/rounded_button"
+        android:text="@string/appEdit"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/searchAppBtn"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/blankSpace"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/blankSpace"
+        android:background="@drawable/rounded_button"
+        android:text="@string/searchApp"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/returnHomeBtn"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#303030"
+        android:text="@string/home"
+        android:textColor="#fff" />
+
+    <Space
+        android:id="@+id/blankSpace"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_above="@id/returnHomeBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp"
+        android:visibility="invisible" />
+
+    <Spinner
+        android:id="@+id/serviceSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/timeEditText"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:spinnerMode="dropdown" />
+
+    <TextView
+        android:id="@+id/nameAppTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/optionMessage" />
+
+</RelativeLayout>

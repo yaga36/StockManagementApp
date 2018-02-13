@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#89cff0"
+    tools:context="com.example.reece.stockmanagementapp.StockActivity">
+
+    <TextView
+        android:id="@+id/stockTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/stockTitle"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textColor="#000"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/optionMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/option_message"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:layout_below="@+id/stockTitle"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/barcodeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/optionMessage"
+        android:layout_marginTop="10dp"
+        android:text="@string/barcode"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/barcodeEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/barcodeTV"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/returnHomeBtn"
+        android:inputType="textCapWords" />
+
+    <TextView
+        android:id="@+id/productNameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/barcodeTV"
+        android:text="@string/productName"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/productNameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/productNameTV"
+        android:layout_alignEnd="@+id/barcodeEditText"
+        android:layout_alignStart="@+id/barcodeEditText" />
+
+    <TextView
+        android:id="@+id/typeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/productNameTV"
+        android:text="@string/type"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/typeEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/typeTV"
+        android:layout_alignEnd="@+id/productNameEditText"
+        android:layout_alignStart="@+id/productNameEditText" />
+
+    <TextView
+        android:id="@+id/quantityTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/typeTV"
+        android:text="@string/quantity"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/quantityEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/quantityTV"
+        android:layout_alignEnd="@+id/typeEditText"
+        android:layout_alignStart="@+id/typeEditText"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/idStockTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/quantityTV"
+        android:text="@string/id"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/idStockEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/idStockTV"
+        android:layout_alignEnd="@+id/quantityEditText"
+        android:layout_alignStart="@+id/quantityEditText"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/viewStockBtn"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:text="@string/viewStock"
+        android:textColor="#fff"
+        android:background="#3F51B5"
+        android:layout_above="@+id/removeStockBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/addStockBtn"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:text="@string/stockAdd"
+        android:textColor="#fff"
+        android:background="#3F51B5"
+        android:layout_above="@+id/editStockBtn"
+        android:layout_toStartOf="@+id/blankSpace"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="5dp"/>
+
+    <Button
+        android:id="@+id/removeStockBtn"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:text="@string/subStock"
+        android:textColor="#fff"
+        android:background="#3F51B5"
+        android:layout_above="@+id/searchStockBtn"
+        android:layout_toEndOf="@+id/blankSpace"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="5dp"/>
+
+    <Button
+        android:id="@+id/editStockBtn"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:text="@string/stockEdit"
+        android:textColor="#fff"
+        android:background="#3F51B5"
+        android:layout_marginEnd="5dp"
+        android:layout_alignTop="@+id/blankSpace"
+        android:layout_toStartOf="@+id/blankSpace"/>
+
+    <Button
+        android:id="@+id/searchStockBtn"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:text="@string/searchStock"
+        android:textColor="#fff"
+        android:background="#3F51B5"
+        android:layout_marginStart="5dp"
+        android:layout_alignTop="@+id/blankSpace"
+        android:layout_toEndOf="@+id/blankSpace" />
+
+    <Button
+        android:id="@+id/returnHomeBtn"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="@string/home"
+        android:textColor="#fff"
+        android:background="#303030" />
+
+    <Space android:id="@+id/blankSpace"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/returnHomeBtn"
+        android:layout_marginBottom="60dp"
+        android:visibility="invisible"/>
+
+
+</RelativeLayout>

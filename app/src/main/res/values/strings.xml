@@ -1,0 +1,114 @@
+<resources>
+
+    <!-- Default Strings-->
+    <string name="app_name">StockManagementApp</string>
+    <string name="titleLogo">SALON ONE</string>
+    <string name="home_welcome">Welcome to the Salon One stock management app</string>
+    <string name="home_welcome_guest">Welcome guest to the Salon One stock management app</string>
+    <string name="home_welcome_normal">Welcome user to the Salon One stock management app</string>
+    <string name="option_message">Please select an option:</string>
+
+    <!-- Login Page Strings-->
+    <string name="loginTitle">Login Page</string>
+    <string name="loginMessage">Please enter a username and password:</string>
+    <string name="username">Username:</string>
+    <string name="password">Password:</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="guestlogin">Guest Login</string>
+
+    <!-- Register Page Strings-->
+    <string name="registerTitle">Register Page</string>
+    <string name="registerMessage">Please enter your details below:</string>
+    <string name="status">Status:</string>
+
+    <!-- Home Page Strings-->
+    <string name="scan">Scan</string>
+    <string name="stock">Stock</string>
+    <string name="client">Client</string>
+    <string name="appointment">Appointment</string>
+    <string name="pricelist">Price List</string>
+    <string name="logout">Log Out</string>
+
+    <!-- Scanning Page Strings-->
+    <string name="titleTextScan">Scanning Page</string>
+    <string name="scanRemove">Remove Product</string>
+    <string name="scanView">View Product</string>
+    <string name="scanUse">Scan Product</string>
+    <string name="scanAdd">Add Product</string>
+
+    <!-- Stock Page Strings-->
+    <string name="stockTitle">Stock Page</string>
+    <string name="stockEdit">Edit Stock</string>
+    <string name="stockAdd">Add Stock</string>
+    <string name="subStock">Remove Stock</string>
+    <string name="viewStock">View Stock</string>
+    <string name="searchStock">Search Stock</string>
+
+    <!-- Client Page Strings-->
+    <string name="clientTitle">Client Page</string>
+    <string name="clientEdit">Edit Client</string>
+    <string name="clientAdd">Add Client</string>
+    <string name="subClient">Remove Client</string>
+    <string name="searchClient">Search for Client</string>
+    <string name="viewClient">View Client</string>
+    <string name="scanContent">Content</string>
+    <string name="scanFormat">Format</string>
+    <!-- Client Text Strings-->
+    <string name="name">Name:</string>
+    <string name="surname">Surname:</string>
+    <string name="email">e-Mail:</string>
+    <string name="date">Date:</string>
+    <string name="time">Time:</string>
+    <string name="service">Service:</string>
+    <string name="id">ID:</string>
+    <string name="dob">Date of Birth:</string>
+
+    <!--Appointment Page Strings-->
+    <string name="appTitle">Appointment Page</string>
+    <string name="appEdit">Edit Appointment</string>
+    <string name="appAdd">Add Appointment</string>
+    <string name="subApp">Remove Appointment</string>
+    <string name="searchApp">Search for Appointment</string>
+    <string name="viewApp">View Appointments</string>
+
+    <!--Price Page Strings-->
+    <string name="priceTitle">Price List Page</string>
+    <string name="price">Price:</string>
+    <string name="duration">Duration:</string>
+    <string name="viewPrice">View Price List</string>
+    <string name="priceAdd">Add to Price List</string>
+    <string name="subPrice">Delete from Price List</string>
+    <string name="priceEdit">Edit Price List</string>
+    <string name="searchPrice">Search Price List</string>
+
+    <!-- Universal Strings-->
+    <string name="home">Home</string>
+
+    <string name="quantity">Quantity:</string>
+    <string name="quantity2">Quantity</string>
+    <string name="type">Type:</string>
+    <string name="productName">Item Name:</string>
+    <string name="barcode">Barcode:</string>
+    <string name="scanStock">Scan Product</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="from_date">From Date</string>
+    <string name="to_date">To Date</string>
+    <string name="searchReg">Search User</string>
+    <string name="regEdit">Edit User</string>
+    <string name="subReg">Remove User</string>
+    <string name="regAdd">Add User</string>
+    <string name="viewReg">View All Users</string>
+
+    <string name="thisIsTest">This is test</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="concatenation">""</string>
+
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.reece.stockmanagementapp.LoginSQLiteActivity"
+    android:background="#89cff0">
+
+    <TextView
+        android:id="@+id/LoginTitleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/loginTitle"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textColor="#000"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/loginMessageTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/loginMessage"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:layout_below="@+id/LoginTitleTV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"/>
+
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/loginMessageTV"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:textColor="#222"
+        android:hint="@string/username"
+        android:textColorHint="#9d9d9d"
+        android:padding="5dp"
+        android:inputType="textPersonName" />
+
+
+    <EditText
+        android:id="@+id/passwordLogEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/usernameEditText"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:textColor="#222"
+        android:hint="@string/password"
+        android:textColorHint="#9d9d9d"
+        android:padding="5dp"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="@string/login"
+        android:textColor="#fff"
+        android:background="@drawable/rounded_button"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/passwordLogEditText"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/guestloginBtn"
+        android:layout_width="125dp"
+        android:layout_height="45dp"
+        android:text="@string/guestlogin"
+        android:textColor="#fff"
+        android:background="@drawable/rounded_button"
+        android:layout_below="@id/loginBtn"
+        android:layout_centerHorizontal="true" />
+
+    <Space android:id="@+id/blankSpace"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

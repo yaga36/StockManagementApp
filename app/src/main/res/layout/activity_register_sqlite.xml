@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#89cff0"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.reece.stockmanagementapp.RegisterSQLiteActivity">
+
+
+    <TextView
+        android:id="@+id/RegisterTitleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:text="@string/registerTitle"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/optionMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RegisterTitleTV"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="@string/option_message"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/nameRegisterEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/optionMessage"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_edittext"
+        android:textColor="#222"
+        android:hint="@string/name"
+        android:textColorHint="#9d9d9d"
+        android:padding="5dp"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/usernameRegisterEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/nameRegisterEditText"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:textColor="#222"
+        android:hint="@string/username"
+        android:textColorHint="#9d9d9d"
+        android:padding="5dp"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/passwordRegisterEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/usernameRegisterEditText"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:textColor="#222"
+        android:hint="@string/password"
+        android:textColorHint="#9d9d9d"
+        android:padding="5dp"
+        android:layout_marginBottom="5dp"
+        android:inputType="textPassword"/>
+
+    <Spinner
+        android:id="@+id/statusSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/passwordRegisterEditText"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_edittext"/>
+
+    <EditText
+        android:id="@+id/statusEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/passwordRegisterEditText"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:textColor="#222"
+        android:hint="@string/status"
+        android:textColorHint="#9d9d9d"
+        android:padding="5dp"
+        android:inputType="textEmailAddress"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/searchRegisterBtn"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/searchReg"
+        android:textColor="#fff"
+        android:layout_above="@+id/removeRegisterBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/addRegisterBtn"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/regAdd"
+        android:textColor="#fff"
+        android:layout_above="@+id/editRegisterBtn"
+        android:layout_toStartOf="@+id/blankSpace"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="5dp"/>
+
+    <Button
+        android:id="@+id/removeRegisterBtn"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/subReg"
+        android:textColor="#fff"
+        android:layout_above="@+id/viewRegisterBtn"
+        android:layout_toEndOf="@+id/blankSpace"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="5dp"/>
+
+    <Button
+        android:id="@+id/editRegisterBtn"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/regEdit"
+        android:textColor="#fff"
+        android:layout_marginEnd="5dp"
+        android:layout_alignTop="@+id/blankSpace"
+        android:layout_toStartOf="@+id/blankSpace" />
+
+    <Button
+        android:id="@+id/viewRegisterBtn"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/viewReg"
+        android:textColor="#fff"
+        android:layout_marginStart="5dp"
+        android:layout_alignTop="@+id/blankSpace"
+        android:layout_toEndOf="@+id/blankSpace" />
+
+    <Button
+        android:id="@+id/returnHomeBtn"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#303030"
+        android:text="@string/home"
+        android:textColor="#fff" />
+
+    <Space android:id="@+id/blankSpace"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/returnHomeBtn"
+        android:layout_marginBottom="65dp"
+        android:visibility="invisible"/>
+
+
+
+</RelativeLayout>

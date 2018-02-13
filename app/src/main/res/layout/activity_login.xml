@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.reece.stockmanagementapp.LoginActivity"
+    android:background="#89cff0">
+
+    <TextView
+        android:id="@+id/LoginTitleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/loginTitle"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textColor="#000"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/loginMessageTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/loginMessage"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:layout_below="@+id/LoginTitleTV"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/usernameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/loginMessageTV"
+        android:layout_marginTop="15dp"
+        android:text="@string/username"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/username"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:background="#fff"
+        android:textColor="#222"
+        android:textColorHint="#999"
+        android:layout_alignBaseline="@+id/usernameTV"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/loginBtn" />
+
+    <TextView
+        android:id="@+id/passwordTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/usernameTV"
+        android:layout_marginTop="10dp"
+        android:text="@string/password"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/passwordLogEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/passwordTV"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/loginBtn"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:text="@string/login"
+        android:textColor="#fff"
+        android:background="#3F51B5"
+        android:layout_above="@id/blankSpace"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/registerTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/register"
+        android:textSize="17sp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignTop="@+id/loginBtn"
+        android:layout_centerHorizontal="true" />
+
+    <Space android:id="@+id/blankSpace"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"/>
+
+</RelativeLayout>
